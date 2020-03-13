@@ -1,6 +1,8 @@
+language: go
+
 services:
   - docker
 before_install:
   - docker build -t data .
-  - docker run -d data /bin/sh -c "./dadata"
+  - docker run -d data /bin/sh -c "go run main.go"
   - docker ps -a
