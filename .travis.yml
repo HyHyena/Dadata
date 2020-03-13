@@ -1,5 +1,0 @@
-services :
-	- docker
-before_install:
-	- docker build -t dadata .
-	- docker run -d dadata
