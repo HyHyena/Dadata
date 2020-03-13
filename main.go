@@ -104,6 +104,7 @@ func org (w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	fmt.Println("Starting server on http://localhost:8080\nTo check whether service is working run http://localhost:8080/service")
 	http.HandleFunc("/ip", ip)
 	http.HandleFunc("/service", service)
 	http.HandleFunc("/org", org)
